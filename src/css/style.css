@@ -613,6 +613,10 @@ a:hover{
     .nav--burger{
         display: block;
     }
+
+    .nav--menu{
+        display: none;
+    }
     
     .org__detail{
         width: 80%;

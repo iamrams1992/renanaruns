@@ -28,6 +28,14 @@ a:hover{
     color: inherit;
 }
 
+label{
+    margin-bottom: 0px;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
 .container{
     width: 85%;
     margin: 0 auto;
@@ -113,14 +121,26 @@ a:hover{
 }
 
 .nav--burger i{
-    font-size: 30px;
+    font-size: 32px;
     transition: 0.4s ease all;
 }
 
-.nav--burger i:hover{
+.burger--inside{
+    padding: 0px 12px;
+    border-radius: 50%;
+    transition: 0.5s all ease;
+}
+
+.burger--inside:hover{
     cursor: pointer;
-    color: #818181;
-    transition: 0.4s ease all;
+    background: #eeeeee;
+    transition: 0.5s all ease;
+}
+
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -999;
 }
 
 /*Content-------------------------*/
@@ -145,8 +165,6 @@ a:hover{
 .topic__heading img{
     width: 100%;
 }
-
-
 
 .topic__detail{
     width: 50%;
@@ -351,8 +369,6 @@ a:hover{
 }
 
 
-
-
 /*Section-Organize*/
 
 .section-organize{
@@ -399,17 +415,6 @@ a:hover{
 .org__detail .call-to-action:hover a{
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*Section-Event*/
 .section-event{
@@ -555,8 +560,16 @@ a:hover{
 
     .nav--menu{
         display: none;
+        position: absolute;
+        background: #ffffff;
+        top: 60px;
+        border: solid 1px #dddddd;
+        padding: 10px;
+        right: 7vw;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: 0.5s all ease;
     }
-    
     
     .coming__inside{
         margin-left: 0px;
@@ -572,15 +585,6 @@ a:hover{
   }
   
   /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-  }
-  
-  /* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
   */
@@ -592,8 +596,17 @@ a:hover{
 
     .nav--menu{
         display: none;
+        position: absolute;
+        background-color: #ffffff;
+        top: 60px;
+        border: solid 1px #dddddd;
+        padding: 10px;
+        right: 7vw;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: 0.5s all ease;
     }
-    
+
     .org__detail{
         width: 80%;
     }
@@ -616,8 +629,17 @@ a:hover{
 
     .nav--menu{
         display: none;
+        position: absolute;
+        background: #ffffff;
+        top: 60px;
+        border: solid 1px #dddddd;
+        padding: 10px;
+        right: 7vw;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: 0.5s all ease;
     }
-    
+
     .org__detail{
         width: 80%;
     }

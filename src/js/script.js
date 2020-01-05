@@ -17,7 +17,6 @@ el.addEventListener('click', function(){
 function showIntro(){
     var rand, data, html, markup;
 
-
     rand = parseInt(Math.random() * 4);
 
     data = [
@@ -72,4 +71,4 @@ function showIntro(){
 }
 
 
-showIntro();
+// showIntro();

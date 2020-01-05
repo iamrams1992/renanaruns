@@ -146,15 +146,33 @@ label:hover{
 /*Content-------------------------*/
 /*Section-Intro*/
 .section-intro{
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .intro__topic{
+    background: url('/src/img/cover.jpg') no-repeat center; 
+    background-size: cover;
+    height: 600px;
+}
+
+.intro__topic--overlay{
+    width: 100%;
+    background-color: #00000090;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro__topic--detail{  
+    text-align: center;
+    color: #ffffff;
 }
 
 .intro__topic h3{
+    font-size: 48px;
+}
+
+.intro__topic p{
     font-size: 18px;
 }
 
@@ -262,6 +280,23 @@ label:hover{
 .section-recommend .point-regis{
     background-color: #1B842C;
     color: #ffffff;
+
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    
+    font-size: 12px;
+
+    position: relative;
+    top: 5px;
+    left: 5px;
+
+    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.75);
+}
+
+.section-recommend .point-wait{
+    background-color: #ffe600;
+    color: #000000;
 
     width: 100px;
     padding: 5px;
@@ -590,6 +625,12 @@ label:hover{
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
+    .intro__topic{
+        background: url('/src/img/cover.jpg') no-repeat center; 
+        background-size: cover;
+        height: 450px;
+    }
+
     .nav--burger{
         display: block;
     }
@@ -623,6 +664,12 @@ label:hover{
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+    .intro__topic{
+        background: url('/src/img/cover.jpg') no-repeat center; 
+        background-size: cover;
+        height: 400px;
+    }
+
     .nav--burger{
         display: block;
     }
